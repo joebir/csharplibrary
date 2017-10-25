@@ -1,0 +1,6 @@
+C:\DotNET\CSharpLibrary\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\DotNET\CSharpLibrary\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\DotNET\CSharpLibrary\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\DotNET\CSharpLibrary\ConsoleApp1\obj\Debug\0.04_ConditionalBank.csproj.CoreCompileInputs.cache
+C:\DotNET\CSharpLibrary\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\DotNET\CSharpLibrary\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

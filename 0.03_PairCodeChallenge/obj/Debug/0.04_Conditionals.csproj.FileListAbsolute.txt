@@ -1,0 +1,6 @@
+C:\DotNET\CSharpLibrary\0.03_PairCodeChallenge\bin\Debug\0.03_PairCodeChallenge.exe.config
+C:\DotNET\CSharpLibrary\0.03_PairCodeChallenge\bin\Debug\0.03_PairCodeChallenge.exe
+C:\DotNET\CSharpLibrary\0.03_PairCodeChallenge\bin\Debug\0.03_PairCodeChallenge.pdb
+C:\DotNET\CSharpLibrary\0.03_PairCodeChallenge\obj\Debug\0.04_Conditionals.csproj.CoreCompileInputs.cache
+C:\DotNET\CSharpLibrary\0.03_PairCodeChallenge\obj\Debug\0.03_PairCodeChallenge.exe
+C:\DotNET\CSharpLibrary\0.03_PairCodeChallenge\obj\Debug\0.03_PairCodeChallenge.pdb
