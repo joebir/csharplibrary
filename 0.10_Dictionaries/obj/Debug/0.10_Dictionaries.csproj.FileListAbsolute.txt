@@ -1,0 +1,7 @@
+C:\DotNET\CSharpLibrary\0.10_Dictionaries\bin\Debug\0.10_Dictionaries.exe.config
+C:\DotNET\CSharpLibrary\0.10_Dictionaries\bin\Debug\0.10_Dictionaries.exe
+C:\DotNET\CSharpLibrary\0.10_Dictionaries\bin\Debug\0.10_Dictionaries.pdb
+C:\DotNET\CSharpLibrary\0.10_Dictionaries\obj\Debug\0.10_Dictionaries.csprojResolveAssemblyReference.cache
+C:\DotNET\CSharpLibrary\0.10_Dictionaries\obj\Debug\0.10_Dictionaries.csproj.CoreCompileInputs.cache
+C:\DotNET\CSharpLibrary\0.10_Dictionaries\obj\Debug\0.10_Dictionaries.exe
+C:\DotNET\CSharpLibrary\0.10_Dictionaries\obj\Debug\0.10_Dictionaries.pdb

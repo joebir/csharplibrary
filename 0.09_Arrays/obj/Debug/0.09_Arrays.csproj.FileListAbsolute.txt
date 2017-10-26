@@ -1,0 +1,7 @@
+C:\DotNET\CSharpLibrary\0.09_Arrays\bin\Debug\0.09_Arrays.exe.config
+C:\DotNET\CSharpLibrary\0.09_Arrays\bin\Debug\0.09_Arrays.exe
+C:\DotNET\CSharpLibrary\0.09_Arrays\bin\Debug\0.09_Arrays.pdb
+C:\DotNET\CSharpLibrary\0.09_Arrays\obj\Debug\0.09_Arrays.csproj.CoreCompileInputs.cache
+C:\DotNET\CSharpLibrary\0.09_Arrays\obj\Debug\0.09_Arrays.exe
+C:\DotNET\CSharpLibrary\0.09_Arrays\obj\Debug\0.09_Arrays.pdb
+C:\DotNET\CSharpLibrary\0.09_Arrays\obj\Debug\0.09_Arrays.csprojResolveAssemblyReference.cache
