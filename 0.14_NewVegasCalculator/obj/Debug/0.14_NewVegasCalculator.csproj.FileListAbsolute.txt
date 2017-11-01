@@ -1,0 +1,7 @@
+C:\DotNET\CSharpLibrary\0.14_NewVegasCalculator\bin\Debug\0.14_NewVegasCalculator.exe.config
+C:\DotNET\CSharpLibrary\0.14_NewVegasCalculator\bin\Debug\0.14_NewVegasCalculator.exe
+C:\DotNET\CSharpLibrary\0.14_NewVegasCalculator\bin\Debug\0.14_NewVegasCalculator.pdb
+C:\DotNET\CSharpLibrary\0.14_NewVegasCalculator\obj\Debug\0.14_NewVegasCalculator.csproj.CoreCompileInputs.cache
+C:\DotNET\CSharpLibrary\0.14_NewVegasCalculator\obj\Debug\0.14_NewVegasCalculator.exe
+C:\DotNET\CSharpLibrary\0.14_NewVegasCalculator\obj\Debug\0.14_NewVegasCalculator.pdb
+C:\DotNET\CSharpLibrary\0.14_NewVegasCalculator\obj\Debug\0.14_NewVegasCalculator.csprojResolveAssemblyReference.cache

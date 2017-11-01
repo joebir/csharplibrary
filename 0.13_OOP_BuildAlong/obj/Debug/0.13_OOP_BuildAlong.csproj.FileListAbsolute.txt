@@ -1,0 +1,7 @@
+C:\DotNET\CSharpLibrary\0.13_OOP_BuildAlong\bin\Debug\0.13_OOP_BuildAlong.exe.config
+C:\DotNET\CSharpLibrary\0.13_OOP_BuildAlong\bin\Debug\0.13_OOP_BuildAlong.exe
+C:\DotNET\CSharpLibrary\0.13_OOP_BuildAlong\bin\Debug\0.13_OOP_BuildAlong.pdb
+C:\DotNET\CSharpLibrary\0.13_OOP_BuildAlong\obj\Debug\0.13_OOP_BuildAlong.csprojResolveAssemblyReference.cache
+C:\DotNET\CSharpLibrary\0.13_OOP_BuildAlong\obj\Debug\0.13_OOP_BuildAlong.csproj.CoreCompileInputs.cache
+C:\DotNET\CSharpLibrary\0.13_OOP_BuildAlong\obj\Debug\0.13_OOP_BuildAlong.exe
+C:\DotNET\CSharpLibrary\0.13_OOP_BuildAlong\obj\Debug\0.13_OOP_BuildAlong.pdb

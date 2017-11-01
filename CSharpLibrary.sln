@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLibrary", "CSharpLibrary\CSharpLibrary.csproj", "{F0706B58-491E-43ED-82AC-1856E11CE574}"
 EndProject
@@ -32,6 +32,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.11_Constructors", "0.11 Constructors\0.11_Constructors.csproj", "{8A4F90B2-4792-4B14-BDD3-77F278699E4E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.12_OOPGame", "0.12_OOPGame\0.12_OOPGame.csproj", "{74871DA0-780B-48DC-9B80-60B584D2316E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.13_OOP_BuildAlong", "0.13_OOP_BuildAlong\0.13_OOP_BuildAlong.csproj", "{027B4036-B6E6-4B4F-B5FE-A24FE4DA3C27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.14_NewVegasCalculator", "0.14_NewVegasCalculator\0.14_NewVegasCalculator.csproj", "{5B54D9D2-F73D-4B57-B90A-DA8DBE90F357}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.15_MethodsAndOverloading", "0.15_MethodsAndOverloading\0.15_MethodsAndOverloading.csproj", "{CBE51287-F3BB-456C-B80E-EB46389C7389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.16_GettersSetters", "0.16_GettersSetters\0.16_GettersSetters.csproj", "{91B5A6D0-AAE6-45B0-A164-8EC413A035A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +107,22 @@ Global
 		{74871DA0-780B-48DC-9B80-60B584D2316E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74871DA0-780B-48DC-9B80-60B584D2316E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74871DA0-780B-48DC-9B80-60B584D2316E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{027B4036-B6E6-4B4F-B5FE-A24FE4DA3C27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027B4036-B6E6-4B4F-B5FE-A24FE4DA3C27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027B4036-B6E6-4B4F-B5FE-A24FE4DA3C27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027B4036-B6E6-4B4F-B5FE-A24FE4DA3C27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B54D9D2-F73D-4B57-B90A-DA8DBE90F357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B54D9D2-F73D-4B57-B90A-DA8DBE90F357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B54D9D2-F73D-4B57-B90A-DA8DBE90F357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B54D9D2-F73D-4B57-B90A-DA8DBE90F357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE51287-F3BB-456C-B80E-EB46389C7389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE51287-F3BB-456C-B80E-EB46389C7389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE51287-F3BB-456C-B80E-EB46389C7389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE51287-F3BB-456C-B80E-EB46389C7389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B5A6D0-AAE6-45B0-A164-8EC413A035A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B5A6D0-AAE6-45B0-A164-8EC413A035A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B5A6D0-AAE6-45B0-A164-8EC413A035A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B5A6D0-AAE6-45B0-A164-8EC413A035A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
