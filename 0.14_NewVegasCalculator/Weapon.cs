@@ -18,13 +18,16 @@ namespace _0._14_NewVegasCalculator
         public byte Magazine { get; set; }
 
         //Weapon-Specific Perk Arrays
-        string[] professionalArray = {".357 Magnum revolver","Lucky",".44 Magnum revolver","Mysterious Magnum",".45 Auto pistol","A Light Shining in Darkness",".45 Auto submachine gun",
-            "5.56mm pistol","9mm pistol","Maria","9mm submachine gun","Vance's 9mm submachine gun","10mm pistol","10mm submachine gun","Sleepytyme","12.7mm pistol","Li'l Devil",
-            "12.7mm submachine gun","12.7mm submachine gun (GRA)","Alien Blaster","Compliance Regulator","Hunting revolver","Hunting revolver (GRA)","Laser pistol","Laser pistol (GRA)","Pew Pew",
-            "Laser RCW","H&H Tools nail gun","Plasma Defender","Plasma Defender (GRA)","Plasma pistol","Plasma pistol (GRA)","Pulse gun","Ranger Sequoia","Recharger pistol",
-            "MF Hyperbreeder Alpha (GRA)","Silenced .22 pistol","Silenced .22 SMG","Sonic emitter"};
+        string[] professionalArray = {".357 Magnum revolver","Lucky",".44 Magnum revolver","Mysterious Magnum",".45 Auto pistol",
+            "A Light Shining in Darkness",".45 Auto submachine gun","5.56mm pistol","9mm pistol","Maria","9mm submachine gun",
+            "Vance's 9mm submachine gun","10mm pistol","10mm submachine gun","Sleepytyme","12.7mm pistol","Li'l Devil",
+            "12.7mm submachine gun","12.7mm submachine gun (GRA)","Alien Blaster","Compliance Regulator","Hunting revolver",
+            "Hunting revolver (GRA)","Laser pistol","Laser pistol (GRA)","Pew Pew","Laser RCW","H&H Tools nail gun","Plasma Defender",
+            "Plasma Defender (GRA)","Plasma pistol","Plasma pistol (GRA)","Pulse gun","Ranger Sequoia","Recharger pistol",
+            "MF Hyperbreeder Alpha (GRA)","Silenced .22 pistol","Silenced .22 SMG","Sonic emitter - Gabriel's bark",
+            "Sonic emitter - opera singer","Sonic emitter - revelation","Sonic emitter - robo-scorpion","Sonic emitter - tarantula"};
         string[] laserCommanderArray = {"Arc welder","Gatling laser","Sprtel-Wood 9700 (GRA)","LAER","Elijah's advanced LAER","Laser pistol","Compliance Regulator","Laser pistol (GRA)",
-            "Missing laser pistol","Pew Pew","Laser RCW","Laser rifle","AER14 prototype","Van Graff laser rifle","MF Hyperbreeder Alpha (GRA)","Pulse gun","Sonic emitter","Tri-beam laser rifle",
+            "Missing laser pistol","Pew Pew","Laser RCW","Laser rifle","AER14 prototype","Van Graff laser rifle","MF Hyperbreeder Alpha (GRA)","Pulse gun","Sonic emitter - Gabriel's bark","Sonic emitter - opera singer","Sonic emitter - revelation","Sonic emitter - robo-scorpion","Sonic emitter - tarantula","Tri-beam laser rifle",
             "Tri-beam laser rifle (GRA)" };
         string[] cowboyArray = {"Dynamite","Long-fuse dynamite","Fire bomb","Time bomb","Bowie knife","Blood-Nap","Combat knife","Chance's knife","Hatchet","Knife","Throwing hatchet","Throwing knife",
         "Tomohawk","War club",".357 Magnum revolver","Lucky",".44 Magnum Revolver","Mysterious Magnum","5.56mm pistol","That Gun","BB gun","Abilene Kid LE BB gun","Brush gun","Medicine Stick (GRA)",

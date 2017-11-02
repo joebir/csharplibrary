@@ -85,7 +85,7 @@ namespace _0._14_NewVegasCalculator
 
         public void LightTouchCheck()
         {
-            //Light Touch: Flat +5% critical chance
+            //Light Touch: Flat +5% critical chance after Ninja
             if(this.Perks.Contains("Light Touch"))
             {
                 this.CritChance += 0.05;

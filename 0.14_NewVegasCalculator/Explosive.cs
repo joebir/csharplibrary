@@ -20,6 +20,34 @@ namespace _0._14_NewVegasCalculator
             this.Magazine = mag;
         }
 
+        public Explosive(string name, double damage, double speed, double reload, byte mag, double critMult, double critDam)
+        {
+            this.Name = name;
+            this.Damage = damage;
+            this.CritMult = critMult;
+            this.CritDamage = critDam;
+            this.Speed = speed;
+            this.ReloadTime = reload;
+            this.Magazine = mag;
+        }
+
+        public Explosive(string name,double damage,double speed)
+        {
+            this.Name = name;
+            this.Damage = damage;
+            this.Speed = speed;
+            this.CritMult = 0;
+            this.CritDamage = 0;
+        }
+
+        public Explosive(string name,double damage)
+        {
+            this.Name = name;
+            this.Damage = damage;
+            this.CritMult = 0;
+            this.CritDamage = 0;
+        }
+
         //Methods
         public void ExplosivesPerks (Character courier)
         {
