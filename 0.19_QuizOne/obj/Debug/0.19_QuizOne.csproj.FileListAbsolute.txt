@@ -4,3 +4,4 @@ C:\DotNET\CSharpLibrary\0.19_QuizOne\bin\Debug\0.19_QuizOne.pdb
 C:\DotNET\CSharpLibrary\0.19_QuizOne\obj\Debug\0.19_QuizOne.csproj.CoreCompileInputs.cache
 C:\DotNET\CSharpLibrary\0.19_QuizOne\obj\Debug\0.19_QuizOne.exe
 C:\DotNET\CSharpLibrary\0.19_QuizOne\obj\Debug\0.19_QuizOne.pdb
+C:\DotNET\CSharpLibrary\0.19_QuizOne\obj\Debug\0.19_QuizOne.csprojResolveAssemblyReference.cache

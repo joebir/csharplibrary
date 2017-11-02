@@ -19,7 +19,7 @@ namespace _0._19_QuizOne
 
         public override double AreaMethod()
         {
-            this.Area = (TBase * THeight) / 2;
+            this.Area = (this.TBase * this.THeight) / 2.0;
             return this.Area;
         }
     }
