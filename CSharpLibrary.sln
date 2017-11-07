@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.18_LINQ", "0.18_LINQ\0.18
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.19_QuizOne", "0.19_QuizOne\0.19_QuizOne.csproj", "{62488A4D-7F7C-47B7-BCEE-5D36E34A339C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.20_Interfaces", "0.20_Interfaces\0.20_Interfaces.csproj", "{A1A47E74-72A3-44F3-BA31-0608B686F486}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.21_CipherHelper", "0.21_CipherHelper\0.21_CipherHelper.csproj", "{D32D6FE5-F557-4A28-9D8A-59AC7491084E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +145,14 @@ Global
 		{62488A4D-7F7C-47B7-BCEE-5D36E34A339C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62488A4D-7F7C-47B7-BCEE-5D36E34A339C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62488A4D-7F7C-47B7-BCEE-5D36E34A339C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A47E74-72A3-44F3-BA31-0608B686F486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A47E74-72A3-44F3-BA31-0608B686F486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A47E74-72A3-44F3-BA31-0608B686F486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A47E74-72A3-44F3-BA31-0608B686F486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32D6FE5-F557-4A28-9D8A-59AC7491084E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32D6FE5-F557-4A28-9D8A-59AC7491084E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32D6FE5-F557-4A28-9D8A-59AC7491084E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32D6FE5-F557-4A28-9D8A-59AC7491084E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,18 +9,18 @@ namespace _0._14_NewVegasCalculator
     public class Character
     {
         //Constructor
-        public Character(byte str, byte luck, byte agi, string[] perks)
+        public Character(byte str, double luck, byte agi, string[] perks)
         {
             this.Strength = str;
             this.Luck = luck;
             this.Agility = agi;
             this.Perks = perks;
-            this.CritChance = this.Luck / 100;
+            this.CritChance = luck / 100;
         }
 
         //Properties
         public byte Strength { get; set; }
-        public byte Luck { get; set; }
+        public double Luck { get; set; }
         public byte Agility { get; set; }
         public string[] Perks { get; set; }
         public double CritChance { get; set; }
@@ -79,7 +79,7 @@ namespace _0._14_NewVegasCalculator
             //Ninja: Multiplicative +15% critical chance
             if (this.Perks.Contains("Ninja") && weapon is Melee || this.Perks.Contains("Ninja") && weapon is Unarmed)
             {
-                this.CritChance = this.CritChance * 1.15;
+                this.CritChance *= 1.15;
             }
         }
 

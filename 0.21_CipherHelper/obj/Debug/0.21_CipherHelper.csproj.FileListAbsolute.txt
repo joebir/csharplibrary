@@ -1,0 +1,7 @@
+C:\DotNET\CSharpLibrary\0.21_CipherHelper\bin\Debug\0.21_CipherHelper.exe.config
+C:\DotNET\CSharpLibrary\0.21_CipherHelper\bin\Debug\0.21_CipherHelper.exe
+C:\DotNET\CSharpLibrary\0.21_CipherHelper\bin\Debug\0.21_CipherHelper.pdb
+C:\DotNET\CSharpLibrary\0.21_CipherHelper\obj\Debug\0.21_CipherHelper.csprojResolveAssemblyReference.cache
+C:\DotNET\CSharpLibrary\0.21_CipherHelper\obj\Debug\0.21_CipherHelper.csproj.CoreCompileInputs.cache
+C:\DotNET\CSharpLibrary\0.21_CipherHelper\obj\Debug\0.21_CipherHelper.exe
+C:\DotNET\CSharpLibrary\0.21_CipherHelper\obj\Debug\0.21_CipherHelper.pdb

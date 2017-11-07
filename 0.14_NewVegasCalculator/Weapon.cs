@@ -26,8 +26,8 @@ namespace _0._14_NewVegasCalculator
             "Plasma Defender (GRA)","Plasma pistol","Plasma pistol (GRA)","Pulse gun","Ranger Sequoia","Recharger pistol",
             "MF Hyperbreeder Alpha (GRA)","Silenced .22 pistol","Silenced .22 SMG","Sonic emitter - Gabriel's bark",
             "Sonic emitter - opera singer","Sonic emitter - revelation","Sonic emitter - robo-scorpion","Sonic emitter - tarantula"};
-        string[] laserCommanderArray = {"Arc welder","Gatling laser","Sprtel-Wood 9700 (GRA)","LAER","Elijah's advanced LAER","Laser pistol","Compliance Regulator","Laser pistol (GRA)",
-            "Missing laser pistol","Pew Pew","Laser RCW","Laser rifle","AER14 prototype","Van Graff laser rifle","MF Hyperbreeder Alpha (GRA)","Pulse gun","Sonic emitter - Gabriel's bark","Sonic emitter - opera singer","Sonic emitter - revelation","Sonic emitter - robo-scorpion","Sonic emitter - tarantula","Tri-beam laser rifle",
+        string[] laserCommanderArray = {"Arc welder","Gatling laser","Sprtel-Wood 9700 (GRA)","LAER","Elijah's advanced LAER","Laser pistol","Compliance Regulator",
+            "Laser pistol (GRA)","Missing laser pistol","Pew Pew","Laser RCW","Laser rifle","AER14 prototype","Van Graff laser rifle","MF Hyperbreeder Alpha (GRA)","Pulse gun","Sonic emitter - Gabriel's bark","Sonic emitter - opera singer","Sonic emitter - revelation","Sonic emitter - robo-scorpion","Sonic emitter - tarantula","Tri-beam laser rifle",
             "Tri-beam laser rifle (GRA)" };
         string[] cowboyArray = {"Dynamite","Long-fuse dynamite","Fire bomb","Time bomb","Bowie knife","Blood-Nap","Combat knife","Chance's knife","Hatchet","Knife","Throwing hatchet","Throwing knife",
         "Tomohawk","War club",".357 Magnum revolver","Lucky",".44 Magnum Revolver","Mysterious Magnum","5.56mm pistol","That Gun","BB gun","Abilene Kid LE BB gun","Brush gun","Medicine Stick (GRA)",
@@ -38,6 +38,7 @@ namespace _0._14_NewVegasCalculator
         string[] fullAutoArray = { "Assault Carbine", "Assault Carbine (GRA)", "Light machine gun", "Bozar (GRA)", ".45 Auto submachine gun", "9mm submachine gun", "Vance's 9mm submachine gun",
             "10mm submachine gun", "Sleepytyme", "12.7mm submachine gun", "12.7mm submachine gun (GRA)", "H&H Tools nail gun", "Silenced .22 submachine gun", "K900 cyberdog gun", "FIDO", "Minigun",
             "CZ57 Avenger", "Shoulder mounted machine gun", "Laser RCW", "Arc welder", "Flamer", "Cleansing Flame (GRA)", "Gatling Laser", "Sprtel-Wood 9700"};
+        string[] pyroArray = { "Flamer", "Shishkebab", "Incinerator", "Heavy incinerator", "Incendiary grenade", "Fire bomb", "Sonic emitter - tarantula", "Sterilizer glove", "Saturnite fist super-heated", "Flare gun", "Gehenna (GRA)", "Cleansing Flame (GRA)", };
 
 
         //Methods
@@ -111,7 +112,7 @@ namespace _0._14_NewVegasCalculator
             //Lord Death: +1/+2/+4% to damage
             if (courier.Perks.Contains("Lord Death Rank 1"))
             {
-                if (courier.Perks.Contains("Lord Death Rank 3") && courier.Perks.Contains("Lord Death Rank 2"))
+                if (courier.Perks.Contains("Lord Death Rank 3"))
                 {
                     damageMult *= 1.04;
                 }
@@ -143,6 +144,18 @@ namespace _0._14_NewVegasCalculator
             if (courier.Perks.Contains("Laser Commander") && laserCommanderArray.Contains(this.Name))
             {
                 damageMult *= 1.15;
+            }
+
+            //Pyromaniac: +50% damage
+            if (courier.Perks.Contains("Pyromaniac") && pyroArray.Contains(this.Name))
+            {
+                damageMult *= 1.5;
+            }
+
+            //Cowboy: +25% damage
+            if (courier.Perks.Contains("Cowboy") && cowboyArray.Contains(this.Name))
+            {
+                damageMult *= 1.25;
             }
 
             return damageMult;

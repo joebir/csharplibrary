@@ -15,7 +15,8 @@ namespace _0._14_NewVegasCalculator
             string[] fullPerkArray = {"Bloody Mess","Demolition Expert Rank 1","Demolition Expert Rank 2","Demolition Expert Rank 3","The Professional","Cowboy","Finesse","Better Criticals","Ninja",
                 "Laser Commander","Slayer","Lord Death Rank 1","Lord Death Rank 2","Lord Death Rank 3","Melee Hacker Rank 1","Melee Hacker Rank 2","Set Lasers for Fun Rank 1",
                 "Set Lasers for Fun Rank 2","Light Touch","Elijah's Ramblings","Grunt","Ain't Like That Now","Just Lucky I'm Alive","Thought You Died","Lonesome Road","Built to Destroy","Fast Shot",
-                "Heavy Handed"};
+                "Heavy Handed","Pyromaniac",};
+            Array.Sort(fullPerkArray);
 
             //Creates dictionaries of all of FNV's weapons
             Dictionary<string, Gun> guns = new Dictionary<string, Gun>();
@@ -543,8 +544,10 @@ namespace _0._14_NewVegasCalculator
             //Check user's Strength and Luck
             Console.WriteLine("Okay. Let's start with something easy. What's your character's strength?");
             byte str = Byte.Parse(Console.ReadLine());
+            Console.WriteLine("Second question, what's your character's Agility?");
+            byte agi = Byte.Parse(Console.ReadLine());
             Console.WriteLine("Cool. What about their Luck?");
-            byte luck = Byte.Parse(Console.ReadLine());
+            double luck = Int64.Parse(Console.ReadLine());
 
             //Check user's perks
             Console.WriteLine("Okay. Here comes the rough stuff. It's time for perks.");
@@ -585,7 +588,9 @@ namespace _0._14_NewVegasCalculator
             string[] perkArray = splitter.Split(',');
 
             //Creates a new Character object
-            Character courier = new Character(str, luck, 5, perkArray);
+            Character courier = new Character(str, luck, agi, perkArray);
+            Console.Clear();
+
 
             //Ask about gear
             Dictionary<string, double> gear = new Dictionary<string, double>();
@@ -634,9 +639,10 @@ namespace _0._14_NewVegasCalculator
             {
                 courier.CharacterPerks(guns[answer]);
                 guns[answer].GunsPerks(courier);
+                courier.CritChance *= guns[answer].CritMult;
                 courier.LightTouchCheck();
 
-                double finalCrit = Math.Min(1,courier.CritChance * guns[answer].CritMult);
+                double finalCrit = Math.Min(1, courier.CritChance);
                 double fullDam = guns[answer].Damage + guns[answer].CritDamage;
                 double damageMult = guns[answer].DamageMultPerks(courier);
                 double finalDamage = (guns[answer].Damage + guns[answer].CritDamage * finalCrit) * damageMult;
@@ -645,6 +651,86 @@ namespace _0._14_NewVegasCalculator
                 Console.WriteLine($"With {guns[answer].Name}, you are going to deal {guns[answer].Damage} base damage per attack, and {guns[answer].Damage * damageMult} after perk modifiers.\n" +
                     $"If you land a critical hit, you deal an extra {guns[answer].CritDamage} base damage for a total of {fullDam * damageMult} after perks.\n" +
                     $"With your final crit chance of {courier.CritChance * guns[answer].CritMult * 100}%, you'll do an average of {finalDamage} per attack.");
+            }
+
+            else if (energy.ContainsKey(answer))
+            {
+                courier.CharacterPerks(energy[answer]);
+                energy[answer].EnergyPerks(courier);
+                courier.CritChance *= energy[answer].CritMult;
+                courier.LightTouchCheck();
+
+                double finalCrit = Math.Min(1, courier.CritChance);
+                double fullDam = energy[answer].Damage + energy[answer].CritDamage;
+                double damageMult = energy[answer].DamageMultPerks(courier);
+                double finalDamage = (energy[answer].Damage + energy[answer].CritDamage * finalCrit) * damageMult;
+
+
+                Console.WriteLine($"With {guns[answer].Name}, you are going to deal {guns[answer].Damage} base damage per attack, and {guns[answer].Damage * damageMult} after perk modifiers.\n" +
+                    $"If you land a critical hit, you deal an extra {guns[answer].CritDamage} base damage for a total of {fullDam * damageMult} after perks.\n" +
+                    $"With your final crit chance of {courier.CritChance * 100}%, you'll do an average of {finalDamage} per attack.");
+            }
+
+            else if (melee.ContainsKey(answer))
+            {
+                courier.CharacterPerks(melee[answer]);
+                melee[answer].MeleePerks(courier);
+                courier.NinjaPerkCheck(melee[answer]);
+                courier.CritChance *= melee[answer].CritMult;
+                courier.LightTouchCheck();
+
+                double finalCrit = Math.Min(1, courier.CritChance);
+                double fullDam = melee[answer].Damage + melee[answer].CritDamage;
+                double damageMult = melee[answer].DamageMultPerks(courier);
+                double finalDamage = (melee[answer].Damage + melee[answer].CritDamage * finalCrit) * damageMult;
+
+
+                Console.WriteLine($"With {melee[answer].Name}, you are going to deal {melee[answer].Damage} base damage per attack, and {melee[answer].Damage * damageMult} after perk modifiers.\n" +
+                    $"If you land a critical hit, you deal an extra {melee[answer].CritDamage} base damage for a total of {fullDam * damageMult} after perks.\n" +
+                    $"With your final crit chance of {courier.CritChance * 100}%, you'll do an average of {finalDamage} per attack.\n" +
+                    $"That means you're doing an average of {finalDamage * melee[answer].Speed} damage per second by swinging {melee[answer].Speed} times.");
+            }
+
+            else if (unarmed.ContainsKey(answer))
+            {
+                courier.CharacterPerks(unarmed[answer]);
+                unarmed[answer].UnarmedPerks(courier);
+                courier.NinjaPerkCheck(unarmed[answer]);
+                courier.CritChance *= unarmed[answer].CritMult;
+                courier.LightTouchCheck();
+
+                double finalCrit = Math.Min(1, courier.CritChance);
+                double fullDam = unarmed[answer].Damage + unarmed[answer].CritDamage;
+                double damageMult = unarmed[answer].DamageMultPerks(courier);
+                double finalDamage = (unarmed[answer].Damage + unarmed[answer].CritDamage * finalCrit) * damageMult;
+
+
+                Console.WriteLine($"With {unarmed[answer].Name}, you are going to deal {unarmed[answer].Damage} base damage per attack, and {unarmed[answer].Damage * damageMult} after perk modifiers.\n" +
+                    $"If you land a critical hit, you deal an extra {unarmed[answer].CritDamage} base damage for a total of {fullDam * damageMult} after perks.\n" +
+                    $"With your final crit chance of {courier.CritChance * 100}%, you'll do an average of {finalDamage} per attack.");
+            }
+
+            else if (explosive.ContainsKey(answer))
+            {
+                courier.CharacterPerks(explosive[answer]);
+                explosive[answer].ExplosivesPerks(courier);
+                courier.CritChance *= explosive[answer].CritMult;
+                courier.LightTouchCheck();
+
+                double finalCrit = Math.Min(1, courier.CritChance);
+                double fullDam = explosive[answer].Damage + explosive[answer].CritDamage;
+                double damageMult = explosive[answer].DamageMultPerks(courier);
+                double finalDamage = (explosive[answer].Damage + explosive[answer].CritDamage * finalCrit) * damageMult;
+
+
+                Console.WriteLine($"With {explosive[answer].Name}, you are going to deal {explosive[answer].Damage} base damage per attack, and {explosive[answer].Damage * damageMult} after perk modifiers.\n" +
+                    $"If you land a critical hit, you deal an extra {explosive[answer].CritDamage} base damage for a total of {fullDam * damageMult} after perks.\n" +
+                    $"With your final crit chance of {courier.CritChance * 100}%, you'll do an average of {finalDamage} per attack.");
+            }
+
+            else
+            {
+                Console.WriteLine("Weapon not recognized. Please restart the utility and try again.");
             }
         }
     }
