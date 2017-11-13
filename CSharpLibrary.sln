@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLibrary", "CSharpLibrary\CSharpLibrary.csproj", "{F0706B58-491E-43ED-82AC-1856E11CE574}"
 EndProject
@@ -50,6 +50,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.20_Interfaces", "0.20_Interfaces\0.20_Interfaces.csproj", "{A1A47E74-72A3-44F3-BA31-0608B686F486}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.21_CipherHelper", "0.21_CipherHelper\0.21_CipherHelper.csproj", "{D32D6FE5-F557-4A28-9D8A-59AC7491084E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzzMVC", "FizzBuzzMVC\FizzBuzzMVC.csproj", "{22672ADB-039F-4B88-A741-A2BBA0743AAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{D32D6FE5-F557-4A28-9D8A-59AC7491084E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D32D6FE5-F557-4A28-9D8A-59AC7491084E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D32D6FE5-F557-4A28-9D8A-59AC7491084E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22672ADB-039F-4B88-A741-A2BBA0743AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22672ADB-039F-4B88-A741-A2BBA0743AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22672ADB-039F-4B88-A741-A2BBA0743AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22672ADB-039F-4B88-A741-A2BBA0743AAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
