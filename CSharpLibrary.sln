@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.21_CipherHelper", "0.21_C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzzMVC", "FizzBuzzMVC\FizzBuzzMVC.csproj", "{22672ADB-039F-4B88-A741-A2BBA0743AAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.22_GuessingGameMvc", "0.22_GuessingGameMvc\0.22_GuessingGameMvc.csproj", "{95927358-A693-47A2-B8E2-4C2283A67522}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{22672ADB-039F-4B88-A741-A2BBA0743AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22672ADB-039F-4B88-A741-A2BBA0743AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22672ADB-039F-4B88-A741-A2BBA0743AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95927358-A693-47A2-B8E2-4C2283A67522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95927358-A693-47A2-B8E2-4C2283A67522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95927358-A693-47A2-B8E2-4C2283A67522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95927358-A693-47A2-B8E2-4C2283A67522}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
